@@ -1,8 +1,10 @@
+import { Section } from 'components/Notification/Notification.styled';
+
 export const Wrapper = ({ title, children }) => {
   return (
-    <section>
+    <Section>
       <h2>{title}</h2>
       {children}
-    </section>
+    </Section>
   );
 };

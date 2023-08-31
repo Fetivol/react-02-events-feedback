@@ -1,13 +1,15 @@
+import { Button, List } from './FbManagement.styled';
+
 export const FbManagement = ({ options, onClick }) => {
   return (
-    <ul>
+    <List>
       {options.map(option => {
         return (
           <li key={option}>
-            <button onClick={() => onClick(option)}>{option}</button>
+            <Button onClick={() => onClick(option)}>{option}</Button>
           </li>
         );
       })}
-    </ul>
+    </List>
   );
 };

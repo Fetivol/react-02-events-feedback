@@ -3,6 +3,8 @@ import { FbManagement } from './FbManagement/FbManagement';
 import { Statistics } from './Statistics/Statistics';
 import { Wrapper } from './Wrapper/Wrapper';
 import { Notification } from './Notification/Notification';
+import { GlobalStyle } from './GlobalStyle';
+import { Layout } from './Layout';
 
 export class App extends Component {
   state = {
@@ -28,7 +30,7 @@ export class App extends Component {
 
   render() {
     return (
-      <div>
+      <Layout>
         <Wrapper title="Please leave feedback">
           <FbManagement
             options={Object.keys(this.state)}
@@ -49,7 +51,8 @@ export class App extends Component {
             <Notification message="There is no feedback"></Notification>
           )}
         </Wrapper>
-      </div>
+        <GlobalStyle></GlobalStyle>
+      </Layout>
     );
   }
 }
