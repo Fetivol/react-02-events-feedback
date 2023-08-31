@@ -7,4 +7,9 @@ export const List = styled.ul`
 
 export const Button = styled.button`
   border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fff;
+  }
 `;
